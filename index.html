@@ -145,7 +145,7 @@
       const pass  = loginPass.value;
       if(email===localStorage.getItem('userEmail') && pass===localStorage.getItem('userPass')){
         alert('مرحباً بك! سيتم توجيهك للوحة التحكم');
-        location.href = 'home.html';
+       window.location.replace("home.html");
       }else{
         alert('بيانات غير صحيحة');
       }
